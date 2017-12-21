@@ -1,5 +1,5 @@
 <template>
-  <header>
+  <header class="header">
     <h1>Header</h1>
   </header>
 </template>
@@ -20,7 +20,13 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-
+<style scoped lang="stylus">
+  .header
+    display: inline-block
+    position relative
+    width 100%
+    height 100vh
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("~/src/assets/img/header-bg.jpg");
+    background-position: center
+    background-size: cover
 </style>

@@ -3,7 +3,6 @@
     <HeaderComponent/>
   </div>
 </template>
-
 <script>
 import HeaderComponent from './components/Header'
 
@@ -14,7 +13,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
