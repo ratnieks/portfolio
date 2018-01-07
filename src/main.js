@@ -3,7 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 import './assets/stylus/app.styl'
-
+const VueScrollTo = require('vue-scrollto')
+Vue.use(VueScrollTo)
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

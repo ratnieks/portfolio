@@ -1,0 +1,70 @@
+.drop-top-enter-active, .drop-top-leave-active
+  transition: all 1s ease
+
+.drop-top-enter, .drop-top-leave-to
+  opacity: 0
+  transform translateY(-5rem)
+
+
+.drop-bottom-enter-active, .drop-bottom-leave-active
+  transition: all 1s ease
+
+.drop-bottom-enter, .drop-bottom-leave-to
+  opacity: 0
+  transform translateY(5rem)
+
+.drop-left-enter-active, .drop-left-leave-active
+  transition: all 1.5s ease
+
+.drop-left-enter, .drop-left-leave-to
+  opacity: 0
+  transform translateX(-50%)
+
+.drop-right-enter-active, .drop-right-leave-active
+  transition: all 1.5s ease
+
+.drop-right-enter, .drop-right-leave-to
+  opacity: 0
+  transform translateX(50%)
+
+.bounce-left-enter-active {
+  animation: bounce-in-left 1.2s
+}
+.bounce-left-leave-active {
+  animation: bounce-in-left 1.2s reverse
+}
+@keyframes bounce-in-left {
+  0% {
+    transform: translateX(-50%)
+  }
+  60% {
+    transform: translateX(3rem)
+  }
+  80% {
+    transform: translateX(-1rem)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.bounce-right-enter-active {
+  animation: bounce-in-right 1.2s
+}
+.bounce-right-leave-active {
+  animation: bounce-in-right 1.2s reverse
+}
+@keyframes bounce-in-right {
+  0% {
+    transform: translateX(50%)
+  }
+  60% {
+    transform: translateX(-3rem)
+  }
+  80% {
+    transform: translateX(1rem)
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
